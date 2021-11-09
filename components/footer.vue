@@ -3,7 +3,7 @@
     <v-container class="py-9">
         <v-row class="justify-space-between ">
             <v-col cols="12" lg="4">
-                <img src="/images/quicklearn_white.png" height=""/>
+                <img src="/images/tix-logo-white.png" height="40"/>
                 <div class="font-weight-light font__12 my-4">23, Kola Adeyina Close, <br> Off Admiralty Way, <br> Lekki, Lagos</div>
 
             </v-col>
@@ -64,7 +64,7 @@ export default {
 
 <style lang="scss" scoped>
 .bg {
-    background: #19005F;
+    background: black;
     color: #FFFFFF;
 }
 
