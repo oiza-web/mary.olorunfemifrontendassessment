@@ -7,7 +7,7 @@
 
     <v-sheet tile color="transparent" class="py-3 mt-12 mb-5 d-flex justify-center">
       <nuxt-link to="/">
-        <img src="/images/tix-logo-mixed.png" width="170" class="mx-auto">
+        <img src="/images/tix-logo-mixed2.png" width="170" class="mx-auto">
       </nuxt-link>
     </v-sheet>
 
@@ -32,7 +32,7 @@
       <div class="d-flex logo__wrapper mr-auto justify-space-between align-center">
         <v-toolbar-title>
           <nuxt-link to="/">
-            <img src="/images/tix-logo-mixed.png" class="logo mx-auto">
+            <img src="/images/tix-logo-mixed2.png" class="logo mx-auto">
           </nuxt-link>
         </v-toolbar-title>
 
@@ -41,12 +41,12 @@
       </div>
       <!-- Nav for web -->
       <div class="d-flex align-center" v-if="$vuetify.breakpoint.lgAndUp">
-        <v-btn nuxt to="#" class="font__15 text-capitalize  mr-4 primary--text  font-weight-bold" text>Products</v-btn>
-        <v-btn nuxt to="#" class="font__15 text-capitalize mr-4 primary--text  font-weight-bold" text>Events</v-btn>
-        <v-btn nuxt to="#" class="font__15 text-capitalize mr-4 primary--text  font-weight-bold" text>Pricing</v-btn>
-        <v-btn nuxt to="#" class="font__15 text-capitalize mr-8 primary--text  font-weight-bold" text>Contact</v-btn>
-        <v-btn nuxt to="#" rounded depressed  class="mr-4 font__15 text-capitalize primary--text  font-weight-bold" width="150" height="50">Log In</v-btn>
-        <v-btn nuxt to="#" rounded depressed  class="mr-4 font__15 text-capitalize primary--text font-weight-bold"  width="180" height="50">Request Demo</v-btn>
+        <v-btn nuxt to="#" class="font__15   mr-4 primary--text  font-weight-bold" text>Products</v-btn>
+        <v-btn nuxt to="#" class="font__15 mr-4 primary--text  font-weight-bold" text>Events</v-btn>
+        <v-btn nuxt to="#" class="font__15  mr-4 primary--text  font-weight-bold" text>Pricing</v-btn>
+        <v-btn nuxt to="#" class="font__15  mr-8 primary--text  font-weight-bold" text>Contact</v-btn>
+        <v-btn nuxt to="#" rounded depressed  class="mr-4 font__15  white--text font-weight-bold" color="#038595" width="150" height="50">Log In</v-btn>
+        <v-btn nuxt to="#" rounded depressed  class="mr-4 font__15 white--text font-weight-bold" color="#FC6436"  width="180" height="50">Request Demo</v-btn>
       </div>
     </div>
   </v-app-bar>
