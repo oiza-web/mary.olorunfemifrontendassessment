@@ -42,9 +42,9 @@ export default {
       themes: {
         light: {
           primary: '#000000',
-          accent: '#000000',
+          accent: '#038595',
           secondary: '#FC6436',
-          info: colors.teal.lighten1,
+          info: '#038595',
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,

@@ -63,30 +63,6 @@
     // font-size: 1rem !important;
   }
 
-  // &--active:before,
-  // &:hover:before,
-  // &:focus:before {
-  //   background-color: transparent;
-  //   opacity: 0;
-  // }
-
-  // &--active,
-  // &:focus {
-  //   color: #20C5DC !important;
-  //   background-color: transparent;
-  //   opacity: 1;
-  //   position: relative;
-
-  //   &::after {
-  //     position: absolute;
-  //     content: '';
-  //     height: 6px;
-  //     width: 6px;
-  //     border-radius: 50%;
-  //     background-color: #20C5DC;
-  //     bottom: -3px;
-  //   }
-  // }
 
 }
 
@@ -126,8 +102,8 @@ export default {
       },
       {
         icon: 'mdi-information',
-        text: 'ABOUT',
-        to: '/about'
+        text: 'PRODUCTS',
+        to: '#'
       },
       {
         icon: 'mdi-bookshelf',
@@ -136,8 +112,8 @@ export default {
       },
       {
         icon: 'mdi-newspaper',
-        text: 'FAQ',
-        to: '/faq'
+        text: 'EVENTS',
+        to: '#'
       },
       {
         icon: 'mdi-phone-message',
@@ -146,12 +122,12 @@ export default {
       },
       {
         icon: 'mdi-book-open-page-variant',
-        text: 'SIGN IN',
+        text: 'LOG IN',
         to: '/sign-in'
       },
       {
         icon: 'mdi-book-open-page-variant',
-        text: 'CREATE ACCOUNT',
+        text: 'REQUEST DEMO',
         to: '/sign-up'
       }
     ],
