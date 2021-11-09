@@ -2,9 +2,9 @@
 <v-app id="default-layout">
   <Header />
 
-  <v-content class="white">
+  <v-main class="white">
     <nuxt />
-  </v-content>
+  </v-main>
 
   <Footer />
 </v-app>

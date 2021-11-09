@@ -96,9 +96,7 @@
             Continue
           </v-btn>
 
-          <v-btn text>
-            Cancel
-          </v-btn>
+
         </v-stepper-content>
 
         <v-stepper-content step="2">
@@ -117,9 +115,9 @@
             Continue
           </v-btn>
 
-          <v-btn text>
-            Cancel
-          </v-btn>
+          <!-- <v-btn   @click="e1 = 2">
+            Back
+          </v-btn> -->
         </v-stepper-content>
 
         <v-stepper-content step="3">
@@ -135,12 +133,12 @@
             color="secondary"
             @click="notificationDialog=true"
           >
-            Continue
+            Complete
           </v-btn>
 
-          <v-btn text>
-            Cancel
-          </v-btn>
+          <!-- <v-btn text>
+           Back
+          </v-btn> -->
         </v-stepper-content>
       </v-stepper-items>
     </v-stepper>
@@ -153,7 +151,7 @@
 
   <v-dialog persistent v-model="notificationDialog" max-width="500">
     <v-sheet class="p__relative">
-      <v-btn @click="closeDialog" light icon class="close__btn white">
+      <v-btn @click="notificationDialog=false" light icon class="close__btn white">
         <v-icon>mdi-close</v-icon>
       </v-btn>
 
