@@ -1,6 +1,6 @@
 <template>
   <v-container fluid  class="bg">
-    <section class="boxed__container">
+    <section >
       <v-row
         :class="[
           $vuetify.breakpoint.mdAndUp ? 'mt-15' : 'mt-0',
