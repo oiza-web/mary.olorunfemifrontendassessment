@@ -1,0 +1,14 @@
+{
+  "events": [
+    {
+      "name": "Lary more music concert",
+      "date": "today",
+      "numberTicketsLeft": 7
+    },
+    {
+      "name": "Lary more music concert",
+      "date": "yesterday",
+      "numberTicketsLeft": 4
+    }
+  ]
+}

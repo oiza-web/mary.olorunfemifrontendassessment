@@ -29,10 +29,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    ,
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: ['@nuxtjs/axios'],
+  axios: {
+    baseURL: 'https://my-json-server.typicode.com/oiza-web/tix-events-api',
+  },
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
