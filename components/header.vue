@@ -42,7 +42,7 @@
       <!-- Nav for web -->
       <div class="d-flex align-center" v-if="$vuetify.breakpoint.lgAndUp">
         <v-btn nuxt to="#" class="font__15   mr-4 primary--text  font-weight-bold" text>Products</v-btn>
-        <v-btn nuxt to="#" class="font__15 mr-4 primary--text  font-weight-bold" text>Events</v-btn>
+        <v-btn nuxt to="#events" class="font__15 mr-4 primary--text  font-weight-bold" text>Events</v-btn>
         <v-btn nuxt to="#" class="font__15  mr-4 primary--text  font-weight-bold" text>Pricing</v-btn>
         <v-btn nuxt to="#" class="font__15  mr-8 primary--text  font-weight-bold" text>Contact</v-btn>
         <v-btn nuxt to="#" rounded depressed  class="mr-4 font__15  white--text font-weight-bold" color="#038595" width="150" height="50">Log In</v-btn>
@@ -104,11 +104,6 @@ export default {
         icon: 'mdi-information',
         text: 'PRODUCTS',
         to: '#'
-      },
-      {
-        icon: 'mdi-bookshelf',
-        text: 'COURSES',
-        to: '/courses'
       },
       {
         icon: 'mdi-newspaper',

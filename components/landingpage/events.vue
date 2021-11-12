@@ -1,5 +1,5 @@
 <template>
-    <section class="bg ">
+    <section class="bg " id="events">
       <v-container class="boxed__container pb-6">
           <div class="d-flex justify-center mt-4">
             <v-col lg="6">

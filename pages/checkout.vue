@@ -238,7 +238,7 @@
           </div>
           <v-btn
             width="150"
-            to="/"
+            to="/#events"
             depressed
             rounded
             color="white"

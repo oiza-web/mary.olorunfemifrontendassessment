@@ -13,13 +13,12 @@
 
                 <v-col cols="4" class="font-weight-thin font__12 ml-7" lg="3">
                     <div class="font-weight-bold font__16">Categories</div>
-                    <div class="mt-1">Business Marketing</div>
-                    <div class="mt-1">Web Development</div>
-                    <div class="mt-1">UI design</div>
-                    <div class="mt-1">Article Writing</div>
-                    <div class="mt-1">Chinese Language</div>
+                    <div class="mt-1">Events</div>
+                    <div class="mt-1">Products</div>
+                    <div class="mt-1">Pricing</div>
+                    <div class="mt-1">Blog</div>
                     <div class="mt-1">Marketing</div>
-                    <div class="mt-1">Social Media Marketing</div>
+
                 </v-col>
 
                 <v-col cols="4" class="font-weight-light font__12" lg="3">
@@ -28,8 +27,7 @@
                     <div class="mt-1">Terms of Services</div>
                     <div class="mt-1">Your Account</div>
                     <div class="mt-1">Privacy</div>
-                    <!-- <div class="mt-1">Contact us</div>
-                    <div class="mt-1">Resume Maker</div> -->
+
                 </v-col>
 
                 <v-col md="2" :class="['font-weight-medium font__12', {'d-none': $vuetify.breakpoint.mdAndDown}]" lg="3">
@@ -37,9 +35,9 @@
                     <div class="mt-1">FAQ</div>
                     <div class="mt-1">Contact Support</div>
                     <div class="mt-1">Call 0803 777 9999</div>
-                    <div class="mt-1">Email support@quicklearn.com</div>
+                    <div class="mt-1">Email support@tix.africa.com</div>
                     <div class="mt-3 font__16 font-weight-bold">Follow us on</div>
-                    <!-- <div class="mt-1"></div> -->
+
                     <div class="mt-2">
                       <v-icon color="white" size="18" class="ml-2">mdi-facebook</v-icon>
                       <v-icon color="white" size="18" class="ml-2">mdi-linkedin</v-icon>
@@ -50,7 +48,7 @@
                 </div>
             </v-col>
         </v-row>
-      <!-- <hr class="hr"> -->
+      
       <v-divider></v-divider>
     </v-container>
 </section>
