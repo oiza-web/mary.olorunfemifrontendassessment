@@ -69,12 +69,13 @@
                 <v-btn
                   depressed
                   rounded
+                  class="my-2"
                   color="accent font-weight-bold"
                   to="/#events"
                 >
                   Return to events
                 </v-btn>
-                <v-btn depressed rounded color="secondary" @click="e1 = 2">
+                <v-btn depressed rounded color="secondary" class="my-2" @click="e1 = 2">
                   Continue
                 </v-btn>
               </v-stepper-content>
@@ -114,7 +115,7 @@
                   depressed
                   rounded
                   color="accent"
-                  class="mt-3"
+                  class="my-2"
                   to="/#events"
                 >
                   Return to events
@@ -122,7 +123,7 @@
                 <v-btn
                   depressed
                   rounded
-                  class="mt-3"
+                  class="my-2"
                   color="secondary"
                   @click="e1 = 3"
                 >
@@ -209,12 +210,13 @@
                     </v-row>
                   </v-card-text>
                 </v-card>
-                <v-btn depressed rounded color="accent" to="/#events">
+                <v-btn depressed rounded color="accent" class="my-2" to="/#events">
                   Return to events
                 </v-btn>
                 <v-btn
                   depressed
                   rounded
+                  class="my-2"
                   color="secondary"
                   @click="notificationDialog = true"
                 >
