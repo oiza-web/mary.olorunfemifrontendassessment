@@ -107,7 +107,7 @@
                   Pay Now
                 </v-btn>
 
-                <v-btn @click="e1 = 2"> Back </v-btn>
+                <!-- <v-btn @click="e1 = 2"> Back </v-btn> -->
               </v-stepper-content>
 
               <v-stepper-content step="3">
