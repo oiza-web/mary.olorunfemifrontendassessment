@@ -96,9 +96,10 @@
                     ></v-select>
                     <div>
                       Order summary <v-divider></v-divider>
-                      <p class="font-weight-bold font__20 my-2">Total Price : $1500</p>
+                      <p class="font-weight-bold font__20 my-2">
+                        Total Price : $1500
+                      </p>
                     </div>
-
                   </div>
                 </v-card>
 
@@ -110,11 +111,86 @@
               </v-stepper-content>
 
               <v-stepper-content step="3">
-                <v-card
-                  class="mb-12"
-                  color="grey lighten-1"
-                  height="500px"
-                ></v-card>
+                <v-card class="mb-12" color="" height="500px">
+                  <v-card-title
+                    class="accent white--text font-weight-black title"
+                  >
+                    PAYMENT<br />
+                    DETAILS<v-spacer></v-spacer>
+
+                    <v-img
+                      aspect-ratio="3.075"
+                      max-height="40"
+                      :src="URL_IMAGE"
+                      position="right"
+                      contain
+                    />
+                  </v-card-title>
+
+                  <v-card-text class="pb-10">
+                    <v-row>
+                      <v-col cols="6">
+                        <v-subheader
+                          class="grey--text text--lighten-1 pl-0 subheader"
+                          >CARDHOLDER’S NAME</v-subheader
+                        >
+                        <v-text-field
+                          single-line
+                          outlined
+                          label="Johny Relative"
+                          hide-details
+                        />
+                      </v-col>
+
+                      <v-col cols="6">
+                        <v-subheader
+                          class="grey--text text--lighten-1 pl-0 subheader"
+                          >CARD NUMBER</v-subheader
+                        >
+                        <v-text-field
+                          single-line
+                          outlined
+                          color="info"
+                          hide-details
+                        />
+                      </v-col>
+
+                      <v-col col="4">
+                        <v-subheader
+                          class="grey--text text--lighten-1 pl-0 subheader"
+                          >EXPIRY DATE</v-subheader
+                        >
+                        <v-select
+                          :items="month"
+                          label="Month"
+                          outlined
+                         color="info"
+                        />
+                      </v-col>
+
+                      <v-col col="4">
+                        <v-subheader
+                          class="grey--text text--lighten-1 pl-0 subheader"
+                        ></v-subheader>
+                        <v-select
+                          :items="year"
+                          label="Year"
+                          outlined
+                          color="info"
+
+                        />
+                      </v-col>
+
+                      <v-col col="4">
+                        <v-subheader
+                          class="grey--text text--lighten-1 pl-0 subheader"
+                          >CVV</v-subheader
+                        >
+                        <v-text-field single-line outlined color="accent" />
+                      </v-col>
+                    </v-row>
+                  </v-card-text>
+                </v-card>
 
                 <v-btn
                   depressed
@@ -220,20 +296,24 @@ export default {
         '12',
         '13',
       ],
+      year: ['2021', '2022', '2023', '2024', '2025', '2026'],
+      month: [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Nov',
+        'Dec',
+      ],
       checkbox: false,
     }
   },
-  methods: {
-    validate() {
-      this.$refs.form.validate()
-    },
-    reset() {
-      this.$refs.form.reset()
-    },
-    resetValidation() {
-      this.$refs.form.resetValidation()
-    },
-  },
+
 }
 </script>
 
