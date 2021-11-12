@@ -31,7 +31,7 @@ export default {
     '@nuxtjs/vuetify',
     ,
   ],
-
+  loading: ['#038595'],
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ['@nuxtjs/axios'],
   axios: {

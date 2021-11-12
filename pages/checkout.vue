@@ -7,7 +7,7 @@
             <v-img src="/images/tix-logo-mixed2.png" height="50" contain />
           </nuxt-link>
           <div class="title text-center mb-6 my-8">Checkout</div>
-
+  <!-- Checkout Steps -->
           <v-stepper v-model="e1">
             <v-stepper-header>
               <v-stepper-step :complete="e1 > 1" step="1" color="info">
@@ -26,7 +26,7 @@
 
             <v-stepper-items>
               <v-stepper-content step="1">
-                <v-card elevation="0" class="mb-12" color="" height="500px">
+                <v-card elevation="0" class="mb-12" color="" height="400px">
                   <v-form ref="form" v-model="valid" lazy-validation>
                     <v-text-field
                       class="my-4"
@@ -66,27 +66,35 @@
                   </v-form>
                 </v-card>
 
+                <v-btn
+                  depressed
+                  rounded
+                  color="accent font-weight-bold"
+                  to="/#events"
+                >
+                  Return to events
+                </v-btn>
                 <v-btn depressed rounded color="secondary" @click="e1 = 2">
                   Continue
                 </v-btn>
               </v-stepper-content>
 
               <v-stepper-content step="2">
-                <v-card elevation="0" class="mb-12" color="" height="500px">
+                <v-card elevation="0" class="mb-12" color="" height="400px">
                   <div>
-                    <div class="font-weight-bold font__16 my-4">
+                    <div class="font-weight-bold font__16 my-2">
                       Tickect Name - Jhonny Drille Christmas Concert
                     </div>
                     <v-img
                       src="/images/event1.jpg"
-                      max-height="300"
-                      max-width="300"
+                      max-height="250"
+                      max-width="250"
                     />
-                    <div class="my-2 font-weight-bold font__16">
+                    <div class="my-1 font-weight-bold font__16">
                       RSVP + Shirts
                     </div>
                     <v-select
-                      class="my-2"
+                      class="my-1"
                       color="info"
                       v-model="select"
                       :items="items2"
@@ -96,27 +104,38 @@
                     ></v-select>
                     <div>
                       Order summary <v-divider></v-divider>
-                      <p class="font-weight-bold font__20 my-2">
+                      <p class="font-weight-bold font__20 my-1">
                         Total Price : $1500
                       </p>
                     </div>
                   </div>
                 </v-card>
-
-                <v-btn depressed rounded color="secondary" @click="e1 = 3">
+                <v-btn
+                  depressed
+                  rounded
+                  color="accent"
+                  class="mt-3"
+                  to="/#events"
+                >
+                  Return to events
+                </v-btn>
+                <v-btn
+                  depressed
+                  rounded
+                  class="mt-3"
+                  color="secondary"
+                  @click="e1 = 3"
+                >
                   Pay Now
                 </v-btn>
-
-                <!-- <v-btn @click="e1 = 2"> Back </v-btn> -->
               </v-stepper-content>
 
               <v-stepper-content step="3">
-                <v-card class="mb-12" color="" height="500px">
+                <v-card class="mb-12" color="" height="400px">
                   <v-card-title
                     class="accent white--text font-weight-black title"
                   >
-                    PAYMENT<br />
-                    DETAILS<v-spacer></v-spacer>
+                    PAYMENT DETAILS<v-spacer></v-spacer>
 
                     <v-img
                       aspect-ratio="3.075"
@@ -164,7 +183,7 @@
                           :items="month"
                           label="Month"
                           outlined
-                         color="info"
+                          color="info"
                         />
                       </v-col>
 
@@ -177,7 +196,6 @@
                           label="Year"
                           outlined
                           color="info"
-
                         />
                       </v-col>
 
@@ -191,7 +209,9 @@
                     </v-row>
                   </v-card-text>
                 </v-card>
-
+                <v-btn depressed rounded color="accent" to="/#events">
+                  Return to events
+                </v-btn>
                 <v-btn
                   depressed
                   rounded
@@ -200,17 +220,13 @@
                 >
                   Complete
                 </v-btn>
-
-                <!-- <v-btn text>
-           Back
-          </v-btn> -->
               </v-stepper-content>
             </v-stepper-items>
           </v-stepper>
         </v-container>
       </v-container>
     </v-row>
-
+    <!-- Modal -->
     <v-dialog persistent v-model="notificationDialog" max-width="500">
       <v-sheet class="p__relative">
         <v-btn
@@ -225,7 +241,7 @@
         <div class="text-center px-5 pt-12 pb-7">
           <div class="title font-weight-bold mb-2">Congratulations there!</div>
           <div>
-            <v-img src="/images/success-modal2.png" contain />
+            <v-img src="/images/success-modal2.png" max-height="200" contain />
           </div>
           <div class="info--text text--darken-2 font-weight-bold font__14">
             Kindly check your email your ticket.
@@ -313,7 +329,6 @@ export default {
       checkbox: false,
     }
   },
-
 }
 </script>
 
@@ -358,15 +373,6 @@ export default {
     line-height: 24px;
   }
 }
-
-// .logo {
-//   width: 100px;
-
-//   @media (max-width: 600px) {
-//     width: 80px;
-//     margin-bottom: 40px;
-//   }
-// }
 
 .form__container {
   @media (min-width: 1264px) {
